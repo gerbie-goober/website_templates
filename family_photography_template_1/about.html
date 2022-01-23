@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about_template_1</title>
+    <link rel="stylesheet" href="css/about-style.css">
+</head>
+
+<body>
+
+    <h1 class="title">MARK KELLY</h1>
+    <p class="subhead">URBAN PHOTOGRAPHER</p>
+    
+    <div id="navbar">
+        <a href="index.html" >HOME</a>
+        <a href="about.html" class="active">ABOUT</a>
+        <a href="contact.html">CONTACT</a>
+    </div>
+    <div class="about">
+        <img src="images/profile-pic-urban.jpg" class="profile-pic">
+        <div class="about-stuff">
+            <h4 class="about-header">ABOUT ME</h4>
+            <p class="about-text">
+                I'm a paragraph. Click here to add your own text and edit me. It’s easy.
+                I’m a great place for you to tell a story and let your users know a little more about you.
+                This is a great space to write long text about your company and your services.
+                You can use this space to go into a little more detail about your company.
+                Talk about your team and what services you provide. <br> <br>
+                I'm a paragraph. Click here to add your own text and edit me. It’s easy.
+                I’m a great place for you to tell a story and let your users know a little more about you.
+                This is a great space to write long text about your company and your services.
+                You can use this space to go into a little more detail about your company.
+                Talk about your team and what services you provide. 
+            </p>
+        </div>
+    </div>
+
+
+    <script>
+        window.onscroll = function() {myFunction()};
+
+        var navbar = document.getElementById("navbar");
+
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            }
+            else {
+                navbar.classList.remove("sticky");
+            }
+        }
+
+    </script>
+</body>

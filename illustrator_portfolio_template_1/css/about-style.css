@@ -1,0 +1,101 @@
+
+@import url('https://fonts.googleapis.com/css?family=Caveat:400,700,800');
+@import url('https://fonts.googleapis.com/css?family=Sacramento:400');
+
+body {
+    text-align: center;
+    font-family: 'Caveat';
+    color: black;
+    padding: 50px;
+    display: inline-block;
+}
+
+
+.title {
+    margin-top: -50px;
+    margin-bottom: -40px;
+    font-size: 50px;
+    font-family: Sacramento, san-serif;
+}
+
+.subhead {
+    font-size: 25px;
+} 
+
+#navbar {
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    background-color: white;
+    padding: 10px;
+    z-index: 1;
+}
+
+#navbar a {
+    display: inline-block;
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#navbar a:hover {
+    opacity: 0.5;
+    transition: 0.3s;
+}
+
+#navbar a.active {
+    color: #1c72f1;
+}
+.about {
+    display: inline-block;
+    text-align: left;
+}
+
+.about-header {
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    margin-top: 55px;
+    font-style: thin;
+}
+
+.about-text {
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-top: -20px;
+    text-align: left;
+}
+
+.profile-pic {
+    max-width: 100%;
+    height: 500px;
+    object-fit: cover;
+    float: left;
+    margin-right: 1em;
+    margin-top: 2.1em;
+}
+
+@media (max-width: 800px) {
+    body {
+        padding: 10px;
+    }  
+
+    .title {
+        margin-top: -5px;
+    }
+
+    #navbar a {
+        font-size: 15px;
+    }
+    
+    .profile-pic {
+        margin-bottom: 10px;
+        max-width: 50%;
+        height: auto;
+    }
+    .about-text {
+        font-size: 15px;
+    }
+
+  }

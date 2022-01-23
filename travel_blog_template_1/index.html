@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>travel_blog_template_1</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="sidebar">
+        <a href="#" title="Join me on Facebook"><img src="images/fb_icon.png" alt="facebook" class="social-media"></a>
+        <a href="#" title="Join me on Instagram"><img src="images/insta_icon.png" alt="instagram"
+                class="social-media"></a>
+        <a href="#" title="Join me on Pinterest"><img src="images/pin_icon.png" alt="pinterest"
+                class="social-media"></a>
+    </div>
+
+    <div id="navbar">
+        <a href="#home" class="home">HOME</a>
+        <a href="#myblog">MY BLOG</a>
+        <a href="#about">ABOUT</a>
+        <a href="#contact">CONTACT</a>
+    </div>
+
+    <div class="main">
+        <a id="home"></a>
+        <div class="parallax">
+            <div class="parallax-text">
+                <h1 class="heading2">Lost in Travel.</h1>
+                <h1 class="heading1">THE ADVENTURE IS EVERYTHING.</h1>
+            </div>
+        </div>
+
+        <div class="intro-to-blog">
+            <h1>THE JOURNEY STARTS HERE.</h1> 
+            <p class="intro-explainer">Here is where I will briefly explain what my blog has to offer!</p>
+        </div>
+
+        <div class="post">
+            <img src="images/flower-rose.jpg" class="img">
+            <p class="date">NATURE | MAR 3, 2020</p>
+            <h2>Stop and Smell the Roses.</h2>
+            <h5 class="subhead">Create a blog post subtitle that summaries your post in a few short sentences
+                and entices your audience to continue reading.</h5>
+            <p class="postcontent">some text...</p>
+        </div>
+
+        <div class="post">
+            <img src="images/caverns_austria.jpg" class="img">
+            <p class="date">TERRAIN | FEB 3, 2020</p>
+            <h2>The Deep, Rocky Caverns of Austria.</h2>
+            <h5 class="subhead">Create a blog post subtitle that summaries your post in a few short sentences
+                and entices your audience to continue reading.</h5>
+            <p class="post-content">some text...</p>
+        </div>
+
+        <div class="post">
+            <img src="images/coral_reefs.jpg" class="img">
+            <p class="date">AQUATIC | JAN 5, 2020</p>
+            <h2>Diving into the Belize Ocean.</h2>
+            <h5 class="subhead">Create a blog post subtitle that summaries your post in a few short sentences
+                and entices your audience to continue reading.</h5>
+            <p class="post-content">some text...</p>
+        </div>
+
+        <div class="mod">
+            <h6>Travel Essentials.</h6>
+            <p class="mod-hook">THIS INCLDES THE BARE NECESSITIES.</p>
+            <div class="travel-essentials">
+                <div class="fakeimg">image</div>
+                <div class="fakeimg">image</div>
+                <div class="fakeimg">image</div>
+                <div class="fakeimg">image</div>
+                <div class="fakeimg">image</div>
+                <div class="fakeimg">image</div>
+            </div>
+        </div>
+
+        <a id="about"></a>
+        <div class="about">
+            <img src="images/mock-profile-pic.jpg" class="profile-pic">
+            <div class="about-stuff">
+                <h4 class="about-header">ABOUT ME</h4>
+                <p class="about-text">
+                    I'm a paragraph. Click here to add your own text and edit me. It’s easy.
+                    I’m a great place for you to tell a story and let your users know a little more about you.
+                    This is a great space to write long text about your company and your services.
+                    You can use this space to go into a little more detail about your company.
+                    Talk about your team and what services you provide.
+                    I'm a paragraph. Click here to add your own text and edit me. It’s easy. <br> <br>
+                    CONTACT ME:
+                </p>
+                <a id="contact"></a>
+                <a href="#" class="email">info@mydomain.com</a>
+            </div>
+        </div>
+
+        <footer>
+
+
+        </footer>
+    </div>
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+
+        window.onscroll = function () { myFunction() };
+
+        var navbar = document.getElementById("navbar");
+
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            }
+            else {
+                navbar.classList.remove("sticky");
+            }
+        }
+
+    </script>
+</body>
+
+</html>

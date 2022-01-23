@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal_blog_template_1</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="sidebar">
+        <a href="#" title="Join me on Facebook"><img src="images/fb_icon.png" alt="facebook" class="social-media"></a>
+        <a href="#" title="Join me on Instagram"><img src="images/insta_icon.png" alt="instagram"
+                class="social-media"></a>
+        <a href="#" title="Join me on Pinterest"><img src="images/pin_icon.png" alt="pinterest"
+                class="social-media"></a>
+    </div>
+
+    <div class="blog_name">
+        <a id="home"></a><h1>FOOD FOR THOUGHT.</h1>
+    </div>
+
+    <div id="navbar">
+        <a href="#home">HOME</a>
+        <a href="#myblog">MY BLOG</a>
+        <a href="#about">ABOUT</a>
+        <a href="#contact">CONTACT</a>
+    </div>
+
+    <div class="main">
+        <div class="row">
+            <div class="left-column">
+                <div class="post spotlight">
+                   <p class="date">MAR 3, 2020</p>
+                    <h2>Stop and Smell the Roses.</h2>
+                    <h5 class="subhead">Create a blog post subtitle that summaries your post in a few short sentences
+                        and
+                        entices your audience to continue reading.</h5>
+                    <img src="images/flower-rose.jpg" class="img">
+                    <p class="postcontent">some text...</p>
+                </div>
+
+                <div class="post">
+                    <p class="date">FEB 3, 2020</p>
+                    <h2>Don't Stalk Your Classmates on Instagram.</h2>
+                    <h5 class="subhead">Create a blog post subtitle that summaries your post in a few short sentences
+                        and
+                        entices your audience to continue reading.</h5>
+                    <img src="images/instagram-on-phone.jpg" class="img">
+                    <p class="post-content">some text...</p>
+                </div>
+
+                <div class="post">
+                    <p class="date">FEB 3, 2020</p>
+                    <h2>To Love Or Not To Love.</h2>
+                    <h5 class="subhead">Create a blog post subtitle that summaries your post in a few short sentences
+                        and entices your audience to continue reading.</h5>
+                    <img src="images/alphabets-cubes-letters-love.jpg" class="img">
+                    <p class="post-content">some text...</p>
+                </div>
+            </div>
+
+            <div class="right-column">
+                    <a id="about"></a><div class="about">
+                        <h4 class="about-header">ABOUT ME</h4>
+                        <img src="images/mock-profile-pic.jpg" class="profile-pic">
+                        <p class="about-text">
+                            I'm a paragraph. Click here to add your own text and edit me. It’s easy.
+                            I’m a great place for you to tell a story and let your users know a little more about you.
+                            This is a great space to write long text about your company and your services.
+                            You can use this space to go into a little more detail about your company.
+                            Talk about your team and what services you provide.
+                            I'm a paragraph. Click here to add your own text and edit me. It’s easy.
+                        </p>
+                    </div>
+
+                <div class="post">
+                    <h2>Popular Posts.</h2>
+                    <div class="fakeimg" >image</div><br>
+                    <div class="fakeimg" >image</div><br>
+                    <div class="fakeimg" >image</div>
+                </div>
+                
+                <div class="post">
+                    <h2>Pic(k) of the Month.</h2>
+                    <h5 class="subhead">Create a blog post subtitle that summaries your post in a few short sentences
+                        and entices your audience to continue reading.</h5>
+                    <div class="fakeimg" >image</div>
+                    <p class="pick-content">some text...</p>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <a id="contact"><div class="footer-container"></a>  
+                <p class="address">info@mydomain.com</p>
+            </div>
+        </footer>
+    </div>
+    <script>
+
+        window.onscroll = function () { myFunction() };
+
+        var navbar = document.getElementById("navbar");
+
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            }
+            else {
+                navbar.classList.remove("sticky");
+            }
+        }
+
+    </script>
+</body>
+
+</html>

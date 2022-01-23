@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>boutique_template_1</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="header">
+            <h1 class="brand">EFFERBIUM</h1>
+                
+            <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="#">home</a>
+                    <a href="#">products</a>
+                    <a href="#">about</a>
+                    <a href="#">contact</a>
+            </div>
+
+            <span style="font-size: 25px; cursor: pointer" onclick="openNav()">&#9776;</span>
+    </div>
+        
+    <div class="main">
+        <div class="new-product">
+            <img src="images/rose-perfume.jpg" alt="header-pic" class="header-pic">
+            <div class="text"> 
+                <h2>Stop and Smell the Roses.</h2>
+                <p class="subhead">Check out our new rose essential oils.</p>
+                <a href="#" class="shop-new">Shop</a>
+            </div>
+                
+        </div>
+
+
+        <div class="mint-container">
+                <div class="perfumes">
+                    <a class="shop-perfumes"><img src="images/perfume.jpg" class="products"></a>
+                    <div class="text"> 
+                        <h5>PERFUMES</h5>              
+                    </div>
+                    
+                </div>
+                
+                <div class="lotions">
+                    <a class="shop-lotions"><img src="images/lotion.jpg" alt="shop-lotion" class="products"></a>
+                    <div class="text"> 
+                        <h5>LOTIONS</h5>              
+                    </div>
+                </div>
+        
+                <div class="essential-oils">
+                    <a class="shop-essential-oils"><img src="images/essential-oil.jpg" class="products"></a>
+                    <div class="text"> 
+                        <h5>ESSENTIAL OILS</h5>              
+                    </div>
+                </div>
+        </div>
+
+        <div class="sale-container">
+            <h3>BUY ONLINE NOW & GET 20% OFF!</h3>
+        </div>
+
+        <div class="about-container">
+            <div class="container">
+                <img src="images/sale-perfume.jpg" alt="perfume-pic" class="about-pics">
+                <div class="about">
+                    <h4 class="about-header">ABOUT US</h4>
+                    <p class="about-text">
+                        I'm a paragraph. Click here to add your own text and edit me. It’s easy. 
+                        Just click “Edit Text” or double click me to add your own content and make changes to the font. 
+                        Feel free to drag and drop me anywhere you like on your page. 
+                        I’m a great place for you to tell a story and let your users know a little more about you.
+                        This is a great space to write long text about your company and your services. 
+                        You can use this space to go into a little more detail about your company. 
+                        Talk about your team and what services you provide.
+                    </p>
+                </div>    
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer-container">
+                <div class="container">
+                    <a href="#">
+
+                    </a>
+                    <p class="address">500 Melrose Place San Francisco, CA 12312 <br>123-456-7890 <br>info@mydomain.com</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+
+    </script>
+</body>
+</html>

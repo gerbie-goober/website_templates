@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>urban_photographer_template_1</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="main">
+        <h1 class="title">MARK KELLY</h1>
+        <p class="subhead">URBAN PHOTOGRAPHER</p>
+
+        <div id="navbar">
+            <a href="index.html" class="active">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="contact.html">CONTACT</a>
+        </div>
+
+        <div class="cascade">
+            <div class="img-zoom">
+                <img src="images/island-drone-shot.jpg" onclick="openModal();currentSlide(1)"
+                    class="hover-shadow cursor">
+            </div>
+            <div class="img-zoom">
+                <img src="images/woman-glasses-and-plaid-skirt.jpg" onclick="openModal();currentSlide(2)"
+                    class="hover-shadow cursor">
+            </div>
+            <div class="img-zoom">
+                <img src="images/bottom-up-view-building.jpg" onclick="openModal();currentSlide(3)"
+                    class="hover-shadow cursor">
+            </div>
+            <div class="img-zoom">
+                <img src="images/city-drone-shot-2.jpg" onclick="openModal();currentSlide(4)"
+                    class="hover-shadow cursor">
+            </div>
+            <div class="img-zoom">
+                <img src="images/city_drone-shot-1.jpg" onclick="openModal();currentSlide(5)"
+                    class="hover-shadow cursor">
+            </div>
+            <div class="img-zoom">
+                <img src="images/city_drone-shot-1.jpg" onclick="openModal();currentSlide(5)"
+                    class="hover-shadow cursor">
+            </div>
+            <div class="img-zoom">
+                <img src="images/city-sunset.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+            </div>
+            <div class="img-zoom">
+                <img src="images/city-night-lights.jpg" onclick="openModal();currentSlide(7)"
+                    class="hover-shadow cursor">
+            </div>
+            <div class="img-zoom">
+                <img src="images/old-man-streets-guitar.jpg" onclick="openModal();currentSlide(8)"
+                    class="hover-shadow cursor">
+            </div>
+            <div class="img-zoom">
+                <img src="images/train-station.jpg" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
+            </div>
+            <div class="img-zoom">
+                <img src="images/window.jpg" onclick="openModal();currentSlide(10)" class="hover-shadow cursor">
+            </div>
+            <div class="img-zoom">
+                <img src="images/woman-back-shot-hat.jpg" onclick="openModal();currentSlide(11)"
+                    class="hover-shadow cursor">
+            </div>
+        </div>
+
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+                <div class="mySlides">
+                    <div class="numbertext">1 / 11</div>
+                    <img src="images/island-drone-shot.jpg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">2 / 11</div>
+                    <img src="images/woman-glasses-and-plaid-skirt.jpg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">3 / 11</div>
+                    <img src="images/bottom-up-view-building.jpg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">4 / 11</div>
+                    <img src="images/city-drone-shot-2.jpg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">5 / 11</div>
+                    <img src="images/city_drone-shot-1.jpg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">6 / 11</div>
+                    <img src="images/city-sunset.jpg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">7 / 11</div>
+                    <img src="images/city-night-lights.jpg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">8 / 11</div>
+                    <img src="images/old-man-streets-guitar.jpg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">9 / 11</div>
+                    <img src="images/train-station.jpg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">10 / 11</div>
+                    <img src="images/window.jpg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">11 / 11</div>
+                    <img src="images/woman-back-shot-hat.jpg" style="width:100%">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        </div>
+        <div class="footer">
+            <h1 class="footer-logo">MARK KELLY</h1>
+            <a href="#" title="Join me on Facebook"><img src="images/fb_icon.png" alt="facebook"
+                    class="social-media"></a>
+            <a href="#" title="Join me on Instagram"><img src="images/insta_icon.png" alt="instagram"
+                    class="social-media"></a>
+            <a href="#" title="Join me on Pinterest"><img src="images/pin_icon.png" alt="pinterest"
+                    class="social-media"></a>
+        </div>
+    </div>
+
+
+    <script>
+        window.onscroll = function() {myFunction()};
+
+        var navbar = document.getElementById("navbar");
+
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            }
+            else {
+                navbar.classList.remove("sticky");
+            }
+        }
+
+        function openModal() {
+            document.getElementById("myModal").style.display = "block";
+        }
+
+        function closeModal() {
+            document.getElementById("myModal").style.display = "none";
+        }
+
+        var slideIndex = 1;
+
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex - 1].style.display = "block";
+        } 
+    </script>
+</body>
+
+</html>

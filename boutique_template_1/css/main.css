@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather:300,400,900');
+
+body {
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Merriweather', sans-serif;
+}
+
+p {
+    font-size: .9em;
+    line-height: 1.6em;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    text-align: center;
+    padding: 0;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    display: block;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: black;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color:white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+
+}
+
+.sidenav a:hover {
+    color: gray;
+}
+
+.brand {
+    font-size: 1.5em;
+}
+
+.new-product {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 2em;
+}
+
+.new-product .text {
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 50%;
+    text-align: center;
+    width: 60%;
+}
+
+.header-pic {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    opacity: 0.5;
+}
+
+h2, .subhead {
+    position: relative;
+    z-index: 3;
+    margin: 0 auto;
+    margin-bottom: 2%;
+}
+
+
+.subhead {
+    font-size: 1em; 
+    font-style: italic;
+    color: black;
+}
+
+.shop-new {
+    background: #f79cc2;
+    width: 10%;
+    display: block;
+    color: #fff;
+    border-radius: 10px;
+    padding: .5em;
+    text-decoration: none;
+    font-size: 1em;
+    font-style: bold;
+    margin: 0 auto;
+    position: relative;
+    z-index: 4;
+}
+
+.shop-new:hover {
+    color: black;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.shop-perfumes, .shop-lotions, .shop-essential-oils {
+    cursor: pointer;
+}
+
+.mint-container {
+    max-width: 100%;
+    background: white;
+    color: rgb(0, 0, 0);
+    padding: 0 auto;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+
+.perfumes, .lotions, .essential-oils {
+    position: relative;
+    display: inline-block;
+}
+
+.perfumes .text, .lotions .text, .essential-oils .text{
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    text-align: center;
+    font-size: 1em;
+    color: black;
+}
+
+.perfumes, .lotions, .essential-oils {
+    max-width: 30%;
+    height: 100%;
+    text-align: center;
+    background: white;
+}
+
+.lotions {
+    margin-left: 4.351%;
+    margin-right: 4.351%;
+}
+
+.products {
+    max-width: 100%;
+    opacity: 0.6;
+    height: auto;
+    text-align: center;
+}
+
+.products:hover {
+    opacity: 1;
+    transition: 0.4s;
+}
+
+.sale-container {
+    background: white;
+    margin: 0 auto;
+    padding: 0;
+}
+
+h3 {
+    text-align: center;
+    font-size: 2em;
+}
+
+.about-container {
+    max-width: 100%;
+    background:#bae9ff;
+    display: inline-block;
+    padding: 1.32em;
+    margin: 0 auto;
+}
+
+.about {
+    text-align: center;
+}
+
+.about-pics {
+    float: left; 
+    max-width: 30%;
+    height: auto;
+    margin-right: 1.32em;
+}
+
+.about-header {
+    font-size: 1em;
+    margin: 0 auto;
+}
+
+.about-text {
+    font-style: thin;
+    font-size: 0.5em;
+}
+
+.footer-container {
+    width: 100%;
+    background: white;
+    color: gray;
+    padding: 2em 0;
+}
+
+.footer-links {
+    margin: 0 auto;  
+}
+
+.footer-links li {
+    display: inline-block;  
+}
+
+.footer-links li a{
+    color: #9d9d9d; 
+    font-size: .8em; 
+}
+
+@media screen and (max-width: 650px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {padding-top: 18px;}
+
+    .lotions, .perfumes, .essential-oils {
+        width: 29.88%;
+    }
+
+    .new-product .text {
+        top: 40%;
+    }
+
+    .shop-new {
+        font-size: 0.7em;
+    }
+
+}
+
+@media only screen and (min-width: 650px) {
+    .shop-new {
+        margin-bottom: 2em;
+    }
+
+    .about-header {
+        font-size: 2em;
+    }
+
+    .about-text {
+        font-size: 0.8em;
+    }
+
+}
+
+@media only screen and (min-width: 875px) {
+    h2 {
+        font-size: 3em;
+        margin: 0;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+
+    .lotions {
+        margin-left: 4.6%;
+        margin-right: 4.6%;
+    }
+
+    h5 {
+        font-size: 1.4em;
+    }
+
+    .shop-new {
+        width: 20%;
+    }
+
+}
+
+@media only screen and (min-width: 1600px) {
+    .server {
+        width: 40%;
+        margin: 5em auto 4em 15%;
+    }
+
+    .container {
+        width: 70%;
+    }
+
+    .about-container {
+        padding: 6em 0 4em;
+    }
+
+    h3 {
+        margin-top: 4em;
+    }
+
+}
